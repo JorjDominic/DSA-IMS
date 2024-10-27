@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia|Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa; /* Light background for the body */
+    margin: 0; /* Reset margin */
+    padding-left: 250px; /* Space for sidebar */
+    background-image: url('green background.jpg');
+    
+}
+
+.container1 {
+    width: 100%;
+    max-width: 1500px; 
+    height: 700px;
+    margin: auto; 
+    padding: 20px;
+    background: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 115px;
+    margin-left:-50px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; 
+    min-height: 550px;
+    height: 635px;
+    margin-left: 280px;
+    padding: 20px;
+    background: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 14px;
+    margin-left:280px;
+    overflow: hidden;
+}
+.sidebar{
+    position: fixed;
+    left: 230px;
+    width: 250px;
+    height: 60%;
+    background: #5cb85c;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 24px;
+}
+.tablewrap {
+    width: 100%; 
+    max-height: 470px; /* Adjust height as needed */
+    overflow-y: auto; /* Only vertical scroll for table */
+    overflow-x: hidden;
+    border: 1px solid
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: none;
+    font-family: 'Roboto', sans-serif; 
+    box-sizing: border-box; /* Ensure it considers padding and borders */
+}
+
+th, td {
+    padding: 10px; /* Adjust as needed */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: black;
+    border: none;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+tr{
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+    color:black;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+}
+tr:hover {
+    background-color: transparent; /* Set to transparent or remove this block entirely */
+    cursor: default; /* Optional: change cursor back to default */
+}
+
+/* Search Form Styles */
+input[type="text"],
+select {
+    flex: 1; /* Grow to fill available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: auto; /* Change to auto to fit content */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    padding: 10px 20px; /* Add some padding */
+    background-color: #4CAF50; /* Same as dashboard button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px; /* Space between search button and this button */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Headings */
+h2, h3 {
+    color: #333;
+    text-align: right;
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+/* Dashboard Button Styles */
+.dashboard-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.dashboard-button:hover {
+    background-color: #0056b3;
+}
+.l1{
+    color:Black;
+    font-family: 'Roboto', sans-serif; 
+}
+.label1{
+    color:black;
+    font-family: 'Roboto', sans-serif; 
+}
+label{
+    color:black;
+}
