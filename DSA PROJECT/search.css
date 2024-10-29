@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia|Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.search {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh; 
+    border-bottom: 2px solid #333;
+    background-image: url('green background.jpg');
+}
+
+.container1 {
+    width: 80%;
+    max-width: 1500px; 
+    height: 700px;
+    margin: auto; 
+    padding: 20px;
+    background: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; 
+    min-height: 550px;
+    height: 635px;
+    margin-left: 280px; /* Adjust this value to create space from the sidebar */
+    padding: 20px;
+    background: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 14px;
+    overflow: hidden;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,200,0,1) 0%, rgba(215,255,0,1) 100%);
+}
+label{
+    color: white;
+}
+h2 {
+    text-align: right;
+    color: black;
+}
+
+/* Headings */
+h3 {
+    color: white;
+}
+
+input[type="text"],
+select {
+    flex: 1; /* Grow to fill available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    width: auto; /* Change to auto to fit content */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Table Styles */
+.searchtable {
+    width: 100%;
+    border-collapse: separate; /* Use separate to allow border-radius */
+    border-spacing: 0; /* Remove default spacing between cells */
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Set the border radius for the table */
+    overflow: hidden; /* Ensure the overflow is hidden for rounded corners */
+}
+
+/* Wrapper for scrolling */
+.table-wrapper {
+    max-height: 470px; /* Set a maximum height for the wrapper */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
+    border-radius: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif; 
+    border: none;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif; 
+    position: sticky; /* Sticky header */
+    top: 0; /* Stick to the top of the table */
+    z-index: 10;
+}
+
+/* Add rounded corners to the header */
+th:first-child {
+    border-top-left-radius: 10px; /* Round top-left corner */
+}
+
+th:last-child {
+    border-top-right-radius: 10px; /* Round top-right corner */
+}
+
+/* Add rounded corners to the cells in the last row */
+tr:last-child td:first-child {
+    border-bottom-left-radius: 20px; /* Round bottom-left corner */
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 20px; /* Round bottom-right corner */
+}
+
+/* For the last row, ensure no border between rounded corners */
+tr:last-child td {
+    border-bottom: none; /* Remove bottom border on the last row */
+}
+
+/* Optional: Add a bottom border to the table */
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif; 
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.dashboard-button:hover {
+    background-color: #0056b3;
+    list-style: none;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px; /* Add some padding */
+    background-color: #4CAF50; /* Same as dashboard button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-left: 10px; /* Space between search button and this button */
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
